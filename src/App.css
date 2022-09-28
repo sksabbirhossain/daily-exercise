@@ -1,5 +1,14 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.btn,
+.btn::after,
+.btn::before,
+.btn:focus{
+  outline: none;
+  box-shadow: none;
 }
 
 .App-logo {
