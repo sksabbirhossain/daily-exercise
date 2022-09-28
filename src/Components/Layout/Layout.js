@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Exercise from "../Exercise/Exercise";
 
 const Layout = () => {
+  const [exercises, setExercises] = useState([]);
+  useEffect(() => {
+    fetch("data.json")
+      .then((res) => res.json())
+      .then((data) => setExercises(data));
+  }, []);
   return (
     <div className="container-fluid">
       <div className="row">
@@ -15,10 +21,9 @@ const Layout = () => {
             </div>
             {/* loop all exercise */}
             <div className="row gap-4">
-            <Exercise/>
-            <Exercise/>
-            <Exercise/>
-            <Exercise/>
+              {exercises.map((exercise) => (
+                <Exercise key={exercise.id} exercise={exercise} />
+              ))}
             </div>
           </div>
         </div>
