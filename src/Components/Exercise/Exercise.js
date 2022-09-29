@@ -1,16 +1,13 @@
 import React from "react";
 
 const Exercise = ({ exercise, handleAddToList }) => {
-  const { img, title, time } = exercise;
+  const { img, title, time, desc } = exercise;
   return (
-    <div class="card" style={{ width: "18rem" }}>
+    <div class="card " style={{ width: "18rem" }}>
       <img src={img} class="rounded mt-2" alt="exercice_image" />
       <div class="card-body">
         <h5 class="card-title">{title}</h5>
-        <p class="card-text mb-0">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
+        <p class="card-text mb-0">{desc}</p>
         <p className="card-text mb-1">
           For Age: <span className="fw-bold"> 20-25</span>
         </p>
