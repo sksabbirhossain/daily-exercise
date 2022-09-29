@@ -12,6 +12,7 @@ const Layout = () => {
   const [addList, setAddList] = useState([]);
   const [breakTime, setBreakTime] = useState(0);
 
+  // fetch data
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
@@ -31,7 +32,6 @@ const Layout = () => {
 
   // set break time
   const addBreakTime = (time) => {
-    // alert(`time ${time}`);
     const breakTime = time;
     setBreakTime(breakTime);
     localStorage.setItem("break-time", time);
@@ -42,7 +42,7 @@ const Layout = () => {
       <div className="row">
         <div className="col-lg-9">
           <div className="container">
-            <div className="hadding">
+            <div className="hadding mb-3">
               <h3>
                 <span></span>daily exercise
               </h3>
@@ -74,6 +74,7 @@ const Layout = () => {
             >
               Activity Complated
             </button>
+            {/* customize toast message */}
             <ToastContainer
               theme="colored"
               position="top-right"
