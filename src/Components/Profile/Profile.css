@@ -1,0 +1,16 @@
+.information {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #dbfae9;
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 10px 0;
+}
+.information p{
+    font-weight: 700;
+}
+.information span{
+    font-weight: 400;
+    font-size: 12px;
+}

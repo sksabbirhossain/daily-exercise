@@ -2,37 +2,37 @@
   {
     "id": "63348309ba70b8407e9e76c0",
     "img": "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    "title": "Mclean",
+    "title": "pushup",
     "time": 40
   },
   {
     "id": "63348309331ab3fcd6fad170",
-    "img": "http://placehold.it/32x32",
-    "title": "Ingram",
+    "img": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "title": "Barbell Bent-Over Row",
     "time": 30
   },
   {
     "id": "6334830905a4da1add15e117",
-    "img": "http://placehold.it/32x32",
-    "title": "Small",
+    "img": "https://images.unsplash.com/photo-1596357395217-80de13130e92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
+    "title": "Deadlift",
     "time": 50
   },
   {
     "id": "63348309ef5a8d6ed2a4623f",
-    "img": "http://placehold.it/32x32",
-    "title": "Salinas",
+    "img": "https://cdn.mos.cms.futurecdn.net/bDWMaSxATnH94K3NjdBe7o.jpg",
+    "title": "bicycle crunch ",
     "time": 25
   },
   {
     "id": "6334830911114f05b64ebf3d",
-    "img": "http://placehold.it/32x32",
-    "title": "Natasha",
+    "img": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "title": "Dumbbell",
     "time": 30
   },
   {
     "id": "63348309ea05bd357a191c64",
-    "img": "http://placehold.it/32x32",
-    "title": "Abby",
+    "img": "https://media.istockphoto.com/photos/trained-legs-with-muscular-calves-in-sneakers-in-training-gym-during-picture-id1202786878?k=20&m=1202786878&s=612x612&w=0&h=OEDJwq2Du3UCEW_WTqfuNd-DGqiURsI9xxUrTc_gv3k=",
+    "title": "Calf raise",
     "time": 55
   }
 ]

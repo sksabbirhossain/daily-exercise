@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,9 +6,13 @@
 .btn,
 .btn::after,
 .btn::before,
-.btn:focus{
+.btn:focus {
   outline: none;
   box-shadow: none;
+}
+p {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .App-logo {
