@@ -32,6 +32,7 @@ const Layout = () => {
     // alert(`time ${time}`);
     const breakTime = time;
     setBreakTime(breakTime);
+    localStorage.setItem("break-time", time)
   };
 
   return (

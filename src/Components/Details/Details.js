@@ -2,6 +2,8 @@ import React from "react";
 import "./Details.css";
 
 const Details = ({ exerciseTime, addBreakTime }) => {
+  const oldbeakTime = localStorage.getItem("break-time");
+  
   return (
     <div className="mt-4">
       <h4>Exercise Details</h4>
@@ -11,7 +13,7 @@ const Details = ({ exerciseTime, addBreakTime }) => {
       </div>
       <div className="Details">
         <p>Break Time</p>
-        <span>{addBreakTime}s</span>
+        <span>{oldbeakTime || addBreakTime}s</span>
       </div>
     </div>
   );
