@@ -8,12 +8,31 @@ import "./Layout.css";
 const Layout = () => {
   const [exercises, setExercises] = useState([]);
   const [addList, setAddList] = useState([]);
+  const [breakTime, setBreakTime] = useState(0);
 
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
       .then((data) => setExercises(data));
   }, []);
+
+  // handle add to list
+  const handleAddToList = (selectedExercise) => {
+    const newList = [...addList, selectedExercise];
+    setAddList(newList);
+  };
+  // set exercise time
+  let totalTime = 0;
+  for (const listTime of addList) {
+    totalTime = totalTime + listTime.time;
+  }
+
+  // set break time
+  const addBreakTime = (time) => {
+    // alert(`time ${time}`);
+    const breakTime = time;
+    setBreakTime(breakTime);
+  };
 
   return (
     <div className="container-fluid">
@@ -29,7 +48,11 @@ const Layout = () => {
             {/* loop all exercise */}
             <div className="row gap-4">
               {exercises.map((exercise) => (
-                <Exercise key={exercise.id} exercise={exercise} />
+                <Exercise
+                  key={exercise.id}
+                  exercise={exercise}
+                  handleAddToList={handleAddToList}
+                />
               ))}
             </div>
           </div>
@@ -39,8 +62,9 @@ const Layout = () => {
         <div className="col-md-3">
           <div className="sidebar">
             <Profile />
-            <Break />
-            <Details/>
+            {/* <Break addBreakTime={addBreakTime} /> */}
+
+            <Details exerciseTime={totalTime} addBreakTime={breakTime} />
           </div>
         </div>
       </div>

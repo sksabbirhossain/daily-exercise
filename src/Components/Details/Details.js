@@ -1,17 +1,17 @@
 import React from "react";
-import "./Details.css"
+import "./Details.css";
 
-const Details = () => {
+const Details = ({ exerciseTime, addBreakTime }) => {
   return (
     <div className="mt-4">
       <h4>Exercise Details</h4>
       <div className="Details">
-        <p>Exercise Details</p>
-        <span>50s</span>
+        <p>Exercise Time</p>
+        <span>{exerciseTime}s </span>
       </div>
       <div className="Details">
         <p>Break Time</p>
-        <span>50s</span>
+        <span>{addBreakTime}s</span>
       </div>
     </div>
   );

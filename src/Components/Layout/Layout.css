@@ -1,3 +1,19 @@
 .sidebar{
     padding: 10px;
 }
+.brak-time{
+    background: #dbfae9;
+    border-radius: 10px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.brak-time span{
+    font-size: 16px;
+    font-weight: 800;
+    background: #62db95;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    
+}
