@@ -3,6 +3,8 @@ import Break from "../Break/Break";
 import Details from "../Details/Details";
 import Exercise from "../Exercise/Exercise";
 import Profile from "../Profile/Profile";
+import notify from "../../utilities/toast";
+import { ToastContainer } from "react-toastify";
 import "./Layout.css";
 
 const Layout = () => {
@@ -32,13 +34,13 @@ const Layout = () => {
     // alert(`time ${time}`);
     const breakTime = time;
     setBreakTime(breakTime);
-    localStorage.setItem("break-time", time)
+    localStorage.setItem("break-time", time);
   };
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid mb-5">
       <div className="row">
-        <div className="col-md-9">
+        <div className="col-lg-9">
           <div className="container">
             <div className="hadding">
               <h3>
@@ -60,12 +62,30 @@ const Layout = () => {
         </div>
 
         {/* sidebar section */}
-        <div className="col-md-3">
+        <div className="col-lg-3">
           <div className="sidebar">
             <Profile />
             <Break addBreakTime={addBreakTime} />
 
             <Details exerciseTime={totalTime} addBreakTime={breakTime} />
+            <button
+              onClick={notify}
+              className="btn btn-success w-100 mt-2 mt-md-5"
+            >
+              Activity Complated
+            </button>
+            <ToastContainer
+              theme="colored"
+              position="top-right"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+            />
           </div>
         </div>
       </div>
