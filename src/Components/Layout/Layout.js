@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Break from "../Break/Break";
+import Details from "../Details/Details";
 import Exercise from "../Exercise/Exercise";
 import Profile from "../Profile/Profile";
 import "./Layout.css";
@@ -38,7 +39,8 @@ const Layout = () => {
         <div className="col-md-3">
           <div className="sidebar">
             <Profile />
-            <Break/>
+            <Break />
+            <Details/>
           </div>
         </div>
       </div>

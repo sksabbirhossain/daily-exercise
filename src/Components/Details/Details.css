@@ -1,0 +1,17 @@
+.Details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dbfae9;
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.Details p {
+  font-size: 13px;
+  font-weight: bold;
+}
+.Details span{
+    font-size: 15px;
+    color: #808080;
+}
