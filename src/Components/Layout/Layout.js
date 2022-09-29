@@ -5,6 +5,8 @@ import Exercise from "../Exercise/Exercise";
 import Profile from "../Profile/Profile";
 import notify from "../../utilities/toast";
 import { ToastContainer } from "react-toastify";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {  faDumbbell } from "@fortawesome/free-solid-svg-icons";
 import "./Layout.css";
 
 const Layout = () => {
@@ -43,8 +45,11 @@ const Layout = () => {
         <div className="col-lg-9">
           <div className="container">
             <div className="hadding mb-3">
-              <h3>
-                <span></span>daily exercise
+              <h3 >
+                <span>
+                <FontAwesomeIcon icon={faDumbbell}/>
+                </span>
+                daily exercise 
               </h3>
               <p>Select today's exercise</p>
             </div>
