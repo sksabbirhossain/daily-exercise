@@ -62,7 +62,7 @@ const Layout = () => {
         <div className="col-md-3">
           <div className="sidebar">
             <Profile />
-            {/* <Break addBreakTime={addBreakTime} /> */}
+            <Break addBreakTime={addBreakTime} />
 
             <Details exerciseTime={totalTime} addBreakTime={breakTime} />
           </div>
